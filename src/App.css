@@ -4,7 +4,12 @@
 
 .App-logo {
   height: 40vmin;
+  transform-origin: center;
+  /* transform: rotate(45deg); */
+  animation: spin 4s linear infinite;
 }
+
+@keyframes spin { 100% { transform:rotate(360deg); } }
 
 .App-header {
   background-color: #282c34;
@@ -19,4 +24,10 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+h1 {
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 72px;
+  color: #0ccac4;
 }
